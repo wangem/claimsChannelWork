@@ -1,0 +1,10 @@
+# logBack配置
+logging:
+  path: logs
+  level: 
+    com.answern: debug 
+  file: ${logging.path}/log.log
+#  config: classpath:config/logback-boot.xml  
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} ${LOG_LEVEL_PATTERN:-%5p} ${PID:- } --- [%t] %-40.40logger{39} : %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}"
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} : %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}"

@@ -1,0 +1,18 @@
+spring: 
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/miaosha
+    username: root
+    password: 111111
+ #下面为连接池的补充设置，应用到上面所有数据源中# 初始化大小，最小，最大
+    type: org.apache.tomcat.jdbc.pool.DataSource
+    tomcat:
+      initial-size: 5
+      min-idle: 5
+      max-active: 30
+      max-wait: 6000 # 配置获取连接等待超时的时间
+      time-between-eviction-runs-millis: 6000 # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+      validation-query: SELECT 1 FROM DUAL
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false

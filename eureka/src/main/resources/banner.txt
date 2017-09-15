@@ -1,0 +1,12 @@
+${AnsiColor.BLUE}
+
+Spring Cloud Eureka Server：
+
+　　　　　　　\\\|/// 
+　　　　　　\\　.-.-　// 
+.　　　　　　(　.@.@　) 
++-------oOOo-----(_)-----oOOo-------+ 
+|　　　 　　　　　　　　　　　　　　     　  | 
+|　Spring Cloud Eureka Server 　     | 
+|　　　　　　　　　　　　　　　　 　　       | 
++---------------------Oooo----------+

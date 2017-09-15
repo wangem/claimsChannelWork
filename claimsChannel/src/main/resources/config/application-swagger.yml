@@ -1,0 +1,17 @@
+swagger: 
+  docket:
+    demo:  
+      title:  非车理赔渠道接口
+      description: 这里是一个claimsChannel实例
+      version: 1.1version
+      license: Apache License, Version 2.0
+      license-url: https://github.com/dyc87112/spring-boot-starter-swagger
+      terms-of-service-url: https://github.com/dyc87112/spring-boot-starter-swagger
+      contact:
+        name: 王二民
+        url:  
+        email: wangermin@95303.com
+      base-package: com.answern.claimsChannel   # 扫描的基础包，默认：全扫描
+      base-path: /**              #需要处理的基础URL规则，默认：/**
+      exclude-path: /error,/ops/*  # 需要排除的URL规则，默认：空
+ 

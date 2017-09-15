@@ -1,0 +1,4 @@
+banner:
+  charset: UTF-8
+  location: classpath:config/banner.txt
+ 

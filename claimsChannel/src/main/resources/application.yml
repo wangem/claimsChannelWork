@@ -1,0 +1,17 @@
+spring: 
+  profiles: pee1
+server: 
+  port: 8080
+  
+---
+server: 
+  port: 8081
+spring: 
+  profiles: pee2
+   
+---
+spring: 
+  profiles: 
+    active: pee2
+
+ 
