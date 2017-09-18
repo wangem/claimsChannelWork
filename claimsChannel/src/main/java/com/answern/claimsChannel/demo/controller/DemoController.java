@@ -52,7 +52,7 @@ public class DemoController {
 	
 //	@Loggable
 	@ApiOperation(value="Mybatis按照ID查询一条数据", notes="这里说明传入值的写法")
-	@ApiImplicitParams({ @ApiImplicitParam(name = "value", value = "要查询数据的ID", required = true, dataType = "Integer") })
+	@ApiImplicitParams({ @ApiImplicitParam(name = "value", value = "要查询数据的ID", required = true, dataType = "Integer" ) })
 	@ResponseBody
 	@RequestMapping(value = "selectByPrimaryKey/{value}" ,method = RequestMethod.GET)
 	public String selectByPrimaryKey(@PathVariable Integer value) {

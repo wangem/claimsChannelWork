@@ -7,6 +7,6 @@
         <package name="com.answern.claimsChannel.**.bins"/>
     </typeAliases>
     <mappers>
-        <mapper resource="Mapper/GoodsMapper.xml"/>
+        <mapper resource="Mapper/GoodsMapper.xml"/> 
     </mappers>
 </configuration>

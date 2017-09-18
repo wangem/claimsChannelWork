@@ -1,0 +1,31 @@
+# 60000 毫秒(分钟) 请求超时熔断
+hystrix:
+  metrics:
+    enabled: true
+  command:
+    default: 
+      execution:
+        isolation:
+          thread:
+            timeroutInMilliseconds: 60000
+  
+ribbon:
+  ConnectionTimeout: 30000   # 连接超时时间
+  readTimeoud: 60000         
+
+zuul: 
+  retryable: false # 关闭重试机制,以免重复提交
+  host:
+    maxTotalConnections: 200  # （总连接数）默认200
+    maxPerRouteConnections: 50  # 路由连接数  默认 20 
+  ignoredServices: '*'
+  add-proxy-headers: true
+  add-host-header: true
+  strip-prefix: false
+  routes:
+    josnToXml:
+      path: /josnToXml/**
+      serviceId: claims-channel-server 
+    api-b:
+      path: /api-b/**
+      serviceId: claims-channel-server 

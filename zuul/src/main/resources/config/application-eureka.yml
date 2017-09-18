@@ -1,0 +1,9 @@
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    region: claimsChannel
+    availability-zones:
+      zones: Zones
+    service-url:
+       defaultZone : http://localhost:7070/eureka
